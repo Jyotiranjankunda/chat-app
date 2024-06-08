@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './chatList.css';
+import AddUser from './addUser/AddUser';
 
 const ChatList = () => {
   const [addMode, setAddMode] = useState(false);
@@ -17,48 +18,49 @@ const ChatList = () => {
           onClick={() => setAddMode((prev) => !prev)}
         />
       </div>
-      <div className="item">
-        <img src="/avatar.png" alt="" />
-        <div className="texts">
-          <span>Aashwasti</span>
+      <div className='item'>
+        <img src='/avatar.png' alt='' />
+        <div className='texts'>
+          <span>Xyz</span>
           <p>Hello</p>
         </div>
       </div>
-      <div className="item">
-        <img src="/avatar.png" alt="" />
-        <div className="texts">
-          <span>Aashwasti</span>
+      <div className='item'>
+        <img src='/avatar.png' alt='' />
+        <div className='texts'>
+          <span>Xyz</span>
           <p>Hello</p>
         </div>
       </div>
-      <div className="item">
-        <img src="/avatar.png" alt="" />
-        <div className="texts">
-          <span>Aashwasti</span>
+      <div className='item'>
+        <img src='/avatar.png' alt='' />
+        <div className='texts'>
+          <span>Xyz</span>
           <p>Hello</p>
         </div>
       </div>
-      <div className="item">
-        <img src="/avatar.png" alt="" />
-        <div className="texts">
-          <span>Aashwasti</span>
+      <div className='item'>
+        <img src='/avatar.png' alt='' />
+        <div className='texts'>
+          <span>Xyz</span>
           <p>Hello</p>
         </div>
       </div>
-      <div className="item">
-        <img src="/avatar.png" alt="" />
-        <div className="texts">
-          <span>Aashwasti</span>
+      <div className='item'>
+        <img src='/avatar.png' alt='' />
+        <div className='texts'>
+          <span>Xyz</span>
           <p>Hello</p>
         </div>
       </div>
-      <div className="item">
-        <img src="/avatar.png" alt="" />
-        <div className="texts">
-          <span>Aashwasti</span>
+      <div className='item'>
+        <img src='/avatar.png' alt='' />
+        <div className='texts'>
+          <span>Xyz</span>
           <p>Hello</p>
         </div>
       </div>
+      {addMode && <AddUser />}
     </div>
   );
 };
